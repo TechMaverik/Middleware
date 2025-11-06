@@ -34,7 +34,7 @@ for file_name in all_files:
             'decimal': Numeric
          }
 
-    df.to_sql(name=table_name, con=engine, if_exists='replace',index=False, dtype=dtype_mapping, chunksize=1000)
+    df.to_sql(name=table_name, con=engine, if_exists='replace',index=False, dtype=dtype_mapping)
     
      
 print("tables created and data inserted")
